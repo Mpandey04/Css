@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(74,56,79);
+        }
+
+        /* Id selector */
+        #id-container{
+            width: 700px;
+            height: 700px;
+            border: 1px solid rgb(45,87,46);
+            color: white;
+            margin: 50px;
+        }
+
+        /* class selector */
+        .class-container{
+            width: 300px;
+            height: 350px;
+            border: 1px solid rgb(88, 244, 3);
+            color: white;
+            margin: 50px;
+            color: #00dede;
+        }
+
+        /* Tagname selector/element selector */
+        h3{
+            color: navajowhite;
+        }
+    </style>
+</head>
+<body>
+    <!-- selector
+        -universal selector
+        -class selector
+        -id selector
+        -TagName selector/element selector 
+    -->
+        <div id="id-container">
+            <h3>This is main container</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, obcaecati.</p>
+            <div class="class-container">
+                <h3>This is class container</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dolorum accusamus expedita repudiandae, voluptatem architecto nihil? Quisquam minus cupiditate labore.</p>
+            </div>
+        </div>
+</body>
+</html>
