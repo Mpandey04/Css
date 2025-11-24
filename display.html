@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            color: white;
+            /* display: inline; */
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+        }
+        .box1{
+            background-color: rgb(56,76,98);
+        }
+        .box2{
+            background-color: rgb(88,132,222);
+        }
+        .box3{
+            background-color: rgb(76,34,54);
+            visibility: hidden;
+        }
+        .box4{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Display Property:
+    1.Inline-Takes only the space required by the element.
+    
+    
+    2.block-Takes full space availabe in width.
+    
+    3.inline-block-Similar to inline but we can set margin and padding.
+
+    none-To remove element from document flow.
+
+    display visibility:- 
+    visibility:hidden;
+    NOTE-When visibility is set to none,space for the element is reserved But for the display set to none,no space is reserved or blocked for the element.
+    -->
+    <div class="box1"">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
+    <div class="box4">Box4</div>
+</body>
+</html>
