@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #nav-container{
+            height: 60px;
+            background-color: #050E3C;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            
+        }
+
+
+        /* Question No:-2 */
+        .outsidediv{
+            margin-top: 20px;
+            height: 600px;
+            width: 600px;
+            background-color: #2f3f6f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .insidediv{
+            height: 200px;
+            width: 200px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav-container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">product</a></li>
+        </nav>
+    </header>
+
+
+    <!-- Question no:-2 Use flexbox to center one div inside another div. -->
+     <div class="outsidediv">
+        <div class="insidediv"></div>
+     </div>
+</body>
+</html>
