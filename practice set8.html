@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 8</title>
+    <style>
+        .loader{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 20px solid rgb(26, 196, 17);
+            border-top: 20px solid rgb(236, 9, 9);
+            animation: AnimateLoader 1s ease-in 0s infinite normal;
+        }
+        @keyframes AnimateLoader{
+            from{
+                transform: rotate(0 deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a simple loader using css.
+     step-1 create a div with circular shap and a thick border from one end.
+
+     step-2: to make it spin create an animation which transform it fom odeg to 360deg.
+
+     step3: Add the animation property to the loader with infnite duration.
+    
+    -->
+     <div class="loader"></div>
+</body>
+</html>
