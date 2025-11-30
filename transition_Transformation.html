@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition And Transformation</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            position: absolute;
+            top: 150px; 
+            left: 200px; 
+            border-radius: 50%;
+            /* transition: all 3s ease-in 1s; */
+            /* transition: all;
+            transition-duration: 2s;
+            transition-timing-function: steps(5); 
+            transition-timing-function: ease-in; 
+            transition-delay: 1s; */
+
+
+            /* Transition shorhand 
+            
+            -> Propety Name | duration | timing-function | delay
+            
+            */
+            /* transition: all 3s ease-in 1s; */
+
+            /* transform: rotate(45deg); */
+            /* first value x axis ke liye hoti hai aur 2nd value y axis ke liye hoti hai*/
+            
+            
+            /* Animation Property */
+            /* animation-name: animatecolor;
+            animation-duration: 0.5s;
+            /* animation-timing-function: ease-in; 
+            animation-delay: 0s;
+            animation-iteration-count: infinite; */
+
+
+            animation: animatecolor 2s ease-in 0s infinite normal;
+            
+        }
+        div:hover{
+            /* background-color: brown;
+            color: white;
+            font-size: 25px; */
+            /* transform: scale(1,2); */
+            /* transform: translate(50px);
+            transform: skewY(90deg); */
+        }
+        /* div:active{
+            background-color: navajowhite;
+        } */
+       
+        @keyframes animatecolor{
+            /* from{background-color:blueviolet ;} 
+            to{background-color: violet;}
+
+            from{left:0px}
+             to{right: 100vw;} */
+
+             0%{
+                background-color: blanchedalmond;
+                transform: rotate(90deg);
+                font-size: 50px;
+                color: white;
+                left: 0px;
+           
+             }
+             50%{
+                background-color: green;
+                color: red;
+                font-size: 20px;
+                left: 300px;
+             }
+             100%{
+                left: 100%;
+                background-color: yellow;
+             }
+        }
+    </style>
+</head>
+<body>
+    <!-- Transitions:-Enables you to define the transition between two states of an element.
+
+        -> transiton property; property you want to transition(fon't-size,width etc.)
+
+        -> transition-duration:2s/2ms...
+
+        -> transition-timing-function:ease-in/ease-out/liner/steps
+
+        ->transition-delay:2s/4ms.
+
+
+
+        CSS Transfrom Property:Used to apply 2D & 3D tarnsfromations to an element.
+        
+            -> rotate:
+                    transform:rotate(45deg)
+
+            rotate(45deg)
+            rotateX(45deg)
+            rotateY(45deg)
+            rotatez(45deg)
+
+
+
+        Scale 
+            transform:scale(2)
+            trnasform:scaleX(0.5)
+
+
+        translate:screen pe kisi chij ko move krana.
+        tranform:translate(20px)
+
+
+        skew
+        transform:skew(45deg)
+
+
+        animation: to animate css element
+        @keyframe myname{
+        from{font-size:20px;} to {font-size:40px}
+        }
+            animation property:-
+            animation-name
+            animation-duration
+            animation-timing-function
+            animation-delay
+            animation-iteration-count
+            animation-direction
+
+    -->
+        <div>
+            Manish pandey
+        </div>
+       
+</body>
+</html>
